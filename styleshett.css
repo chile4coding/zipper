@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:  0;
+}
+body{
+    background-color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+
+}
+h2{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 1em;
+    animation: enlarge 3s ;
+    color: rgb(22, 97, 38);
+    box-shadow: 2px 4px 3px rgb(22, 97, 38);
+}
+.body-section{
+    border: 1px solid black;
+    height: 20em;
+    box-shadow: 2px 3px 4px black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    margin:  0 auto;
+    background-color :rgb(232, 252, 236);
+}
+label{
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em 1em;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+label:hover{
+    background-color:rgb(22, 97, 38);
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+input{
+  margin: 1em;
+  height: 2em;
+  width: 20em;
+  font-weight: bolder;
+  font-size: 1em;
+  border-radius: 15px;
+  padding: 1em;
+  outline: none;
+  border: 1px solid rgb(196, 190, 190);
+  
+
+}
+input:hover{
+    background-color: rgb(177, 173, 173);
+    color: rgb(22, 97, 38);
+    transition: 1s;
+
+}
+@keyframes enlarge{
+    0% {
+      transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
